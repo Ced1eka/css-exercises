@@ -1,6 +1,21 @@
-.header  {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex: auto; */
+  border: 1px solid rgb(0, 255, 85);
+  margin: .55rem;
+  padding: 10px;
 }
 
 .logo {
@@ -22,4 +37,31 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+}
+.left-links, .right-links{
+  display: flex;
+  border: 1px solid blue;
+  max-width: 300px;
+  /* padding: .5rem 0; */
+
+}
+.links-r {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: .5rem 0;
+  margin-right: .5rem;
+  gap: 14px;
+
+  border: 1px solid red;
+}
+.links-l {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: .5rem 0;
+  margin-left: .5rem;
+  gap: 14px;
+
+  border: 1px solid red;
 }
